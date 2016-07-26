@@ -20,3 +20,7 @@ Later for git:
 
     $ echo 'node_modules' >> .gitignore
     $ echo 'npm-debug.log' >> .gitignore
+
+To generate hashes for subresource integrity:
+
+    $ cat js/bootstrap.min.js | openssl dgst -sha384 -binary | openssl enc -base64 -A

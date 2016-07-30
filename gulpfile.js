@@ -1,7 +1,8 @@
 'use strict';
 
 var gulp = require('gulp'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    cleanCSS = require('gulp-clean-css');
 
 gulp.task('default', ['scss', 'js']);
 
@@ -17,7 +18,8 @@ gulp.task('js', function() {
 
 gulp.task('scss', function () {
    return gulp.src('scss/style.scss')
-          .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+          .pipe(sass().on('error', sass.logError))
+          .pipe(cleanCSS({compatibility: 'ie9'}))
           .pipe(gulp.dest('css'));
 });
 

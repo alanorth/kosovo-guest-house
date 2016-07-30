@@ -12,7 +12,7 @@ To set up the project initially:
     $ npm init --yes
     $ npm install bootstrap@4.0.0-alpha.2 jquery@2.1.4 --save --save-exact
     $ npm install -g gulp
-    $ npm install --save-dev gulp
+    $ npm install --save-dev gulp gulp-sass
 
 To re-build CSS and JavaScript assets:
 

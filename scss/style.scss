@@ -2,4 +2,7 @@
 $enable-flex:               false;
 $enable-grid-classes:       true;
 
+// import local styles first
+@import 'scss/main.scss';
+
 @import 'node_modules/bootstrap/scss/bootstrap.scss';

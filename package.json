@@ -6,7 +6,7 @@
   "scripts": {
     "build:css": "node-sass --output-style compressed scss/style.scss | cleancss > css/style.css",
     "build:js": "cp node_modules/bootstrap/dist/js/bootstrap.min.js node_modules/jquery/dist/jquery.min.js js",
-    "build": "npm run build:css && npm run build:js"
+    "build": "npm run build:css & npm run build:js"
   },
   "repository": {
     "type": "git",

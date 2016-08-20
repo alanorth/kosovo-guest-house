@@ -14,7 +14,7 @@ gulp.task('js', function() {
 gulp.task('style', function () {
    return gulp.src('scss/style.scss')
           .pipe(sass().on('error', sass.logError))
-          .pipe(cleanCSS({compatibility: 'ie9'}))
+          .pipe(cleanCSS())
           .pipe(gulp.dest('css'));
 });
 

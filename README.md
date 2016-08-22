@@ -7,16 +7,13 @@ I've spent a lot of time in Bulgaria and am amazed at how many awesome guest hou
 To set up the project initially:
 
     $ mkdir kosovo-guest-house
-    $ nvm install stable
-    $ nvm use stable
     $ npm init --yes
-    $ npm install bootstrap@4.0.0-alpha.2 jquery@2.1.4 --save --save-exact
-    $ npm install -g gulp
-    $ npm install --save-dev gulp gulp-sass gulp-clean-css
+    $ npm install bootstrap@4.0.0-alpha.3 jquery@3.0.0 --save --save-exact
+    $ npm install --save-dev node-sass clean-css
 
 To re-build CSS and JavaScript assets:
 
-    $ gulp
+    $ npm run build
 
 Later for git:
 

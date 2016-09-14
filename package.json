@@ -18,9 +18,6 @@
   ],
   "author": "Alan Orth",
   "license": "GPL-3.0",
-  "engines": {
-    "node": "4.5.0"
-  },
   "dependencies": {
     "bootstrap": "4.0.0-alpha.4",
     "jquery": "3.0.0"

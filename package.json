@@ -6,7 +6,7 @@
   "scripts": {
     "build:css": "node-sass --output-style expanded --precision 6 scss/style.scss css/style.css.tmp && cleancss --level 1 css/style.css.tmp -o css/style.css",
     "build:js": "cp node_modules/bootstrap/dist/js/bootstrap.min.js node_modules/jquery/dist/jquery.min.js js",
-    "build": "npm run build:css & npm run build:js && npm run clean",
+    "build": "npm run build:css && npm run build:js && npm run clean",
     "clean": "rm css/style.css.tmp"
   },
   "repository": {

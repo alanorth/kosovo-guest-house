@@ -1,4 +1,4 @@
-// import local styles first
-@import 'scss/main.scss';
-
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+// local style overrides
+@import 'scss/main.scss';
